@@ -1,0 +1,55 @@
+[envs.dev]
+api_base_url = "https://api.targetai.dev"
+openapi_url = "https://api.targetai.dev/api/v1/openapi.json"
+ui_base_url = "https://targetai.dev"
+etcd_host = "100.100.103.23"
+etcd_port = 2379
+rtsp_base_url = "rtsp://100.100.103.24:554/restream/dev/cp/stor1"
+dahua_source = "dahua://admin:admin123@100.100.101.7:80/channel_id=1?event_type=lpr"
+hikvision_source = "hikvision://admin:TargetAI2026@10.1.0.51:80/channel_id=1?event_type=fr"
+capacitygroup_token = "0000000000000000"
+scheduler_group = "lpr"
+group_id = 1803
+organization_id = 1
+kafka_brokers = ["100.100.103.51", "100.100.103.52", "100.100.103.53"]
+cassandra_host = "100.100.103.51"
+psql_host = "100.100.103.51"
+seaweed_host = "100.100.103.23"
+redis_host = "100.100.103.23"
+clickhouse_host = "100.100.103.51"
+qdrant_host = "100.100.103.51"
+vicmetrics_url = "http://100.100.103.24:8428"
+nanny_host = "100.100.103.23"
+ss1_uuid = "4fce673e-55d8-4873-aa11-363e08c2c969"
+ss1_ssh_host = "100.100.103.13"
+ss2_uuid = "319f7948-c848-468b-a07e-0dd1ed4b2bc5"
+ss2_ssh_host = "100.100.103.14"
+
+[envs.stage]
+api_base_url = "https://api.teye.dev"
+openapi_url = "https://api.teye.dev/api/v1/openapi.json"
+ui_base_url = "https://teye.dev"
+etcd_host = "10.0.12.22"
+etcd_port = 2379
+rtsp_base_url = "rtsp://10.0.13.134:554/restream/vm"
+dahua_source = "dahua://admin:admin123@100.100.101.7:80/channel_id=1?event_type=lpr"
+hikvision_source = "hikvision://admin:TargetAI2026@10.1.0.51:80/channel_id=1?event_type=fr"
+capacitygroup_token = "0000000000000000"
+scheduler_group = "office"
+group_id = 70
+organization_id = 5
+kafka_brokers = ["10.0.12.71", "10.0.12.72", "10.0.12.73"]
+cassandra_host = "10.0.12.71"
+psql_host = "10.0.12.71"
+seaweed_host = "10.0.12.22"
+redis_host = "10.0.12.22"
+clickhouse_host = "10.0.12.71"
+qdrant_host = "10.0.12.71"
+vicmetrics_url = "http://10.0.12.71:8428"
+nanny_host = "10.0.12.22"
+ss1_uuid = "e65c9834-96ef-4437-a1f5-721de70e4b00"
+ss1_ssh_host = "10.0.12.11"
+ss2_uuid = "33efad50-d7b2-4a0e-980f-92f56ee2f677"
+ss2_ssh_host = "10.0.12.13"
+ss3_uuid = "340ed99e-dab2-4f19-a44e-7cd953a33ed0"
+ss3_ssh_host = "10.0.12.14"
